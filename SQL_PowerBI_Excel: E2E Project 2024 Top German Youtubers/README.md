@@ -389,7 +389,8 @@ HAVING
 
 - What does the dashboard look like?
 
-![Picture of Power BI Dashboard](https://github.com/dgmuhlbauer98/Portfolio/blob/1f1255173a953c59572e7f51bfa3974d6e9c5ae1/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/Dashboard.pdf)
+![Picture of Power BI Dashboard](https://github.com/dgmuhlbauer98/Portfolio/blob/89a460b545d98dff39af106acb0cf687ad2e3859/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/dashboard.png)
+
 
 This shows the Top German Youtubers in 2024 so far. 
 
