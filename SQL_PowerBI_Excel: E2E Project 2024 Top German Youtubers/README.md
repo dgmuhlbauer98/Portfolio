@@ -326,7 +326,7 @@ FROM
 SELECT 
 	COUNT(*) as no_of_columns
 FROM
-    INFORMATION_SCHEMA.COLUMNS
+    	INFORMATION_SCHEMA.COLUMNS
 WHERE 
 	TABLE_NAME = 'view_german_youtubers_2024';
 ```
@@ -373,11 +373,11 @@ FROM
 
 -- 2.
 GROUP BY
-    channel_name
+    	channel_name
 
 -- 3.
 HAVING
-    COUNT(*) > 1;
+    	COUNT(*) > 1;
 ```
 ### Output
 ![Duplicate count check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/duplicate%20count%20check.png)
@@ -389,19 +389,19 @@ HAVING
 
 - What does the dashboard look like?
 
-![GIF of Power BI Dashboard](assets/images/top_uk_youtubers_2024.gif)
+![Picture of Power BI Dashboard](https://github.com/dgmuhlbauer98/Portfolio/blob/1f1255173a953c59572e7f51bfa3974d6e9c5ae1/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/Dashboard.pdf)
 
-This shows the Top UK Youtubers in 2024 so far. 
+This shows the Top German Youtubers in 2024 so far. 
 
 
 ## DAX Measures
 
 ### 1. Total Subscribers (M)
 ```sql
-Total Subscribers (M) = 
+Total Subscriber (M) = 
 VAR million = 1000000
-VAR sumOfSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
-VAR totalSubscribers = DIVIDE(sumOfSubscribers,million)
+VAR sumOfSubscribers = SUM(view_german_youtubers_2024[total_subscribers])
+VAR totalSubscribers = DIVIDE(sumOfSubscribers, million)
 
 RETURN totalSubscribers
 
@@ -411,17 +411,16 @@ RETURN totalSubscribers
 ```sql
 Total Views (B) = 
 VAR billion = 1000000000
-VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
-VAR totalViews = ROUND(sumOfTotalViews / billion, 2)
+VAR sumOfTotalViews = SUM(view_german_youtubers_2024[total_views])
+VAR totalViews = DIVIDE(sumOfTotalViews, billion)
 
 RETURN totalViews
-
 ```
 
 ### 3. Total Videos
 ```sql
 Total Videos = 
-VAR totalVideos = SUM(view_uk_youtubers_2024[total_videos])
+VAR totalVideos = SUM(view_german_youtubers_2024[total_videos])
 
 RETURN totalVideos
 
@@ -429,13 +428,13 @@ RETURN totalVideos
 
 ### 4. Average Views Per Video (M)
 ```sql
-Average Views per Video (M) = 
-VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
-VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
-VAR  avgViewsPerVideo = DIVIDE(sumOfTotalViews,sumOfTotalVideos, BLANK())
-VAR finalAvgViewsPerVideo = DIVIDE(avgViewsPerVideo, 1000000, BLANK())
+Avg views per Video (M) = 
+VAR sumOfTotalViews = SUM(view_german_youtubers_2024[total_views])
+VAR sumofTotalVideos = SUM(view_german_youtubers_2024[total_videos])
+VAR avgOfViewsPerVideo = DIVIDE(sumOfTotalViews, sumofTotalVideos, BLANK())
+VAR finalAvgViewsPerVideo = DIVIDE(avgOfViewsPerVideo, 1000000, BLANK())
 
-RETURN finalAvgViewsPerVideo 
+RETURN finalAvgViewsPerVideo
 
 ```
 
@@ -443,23 +442,23 @@ RETURN finalAvgViewsPerVideo
 ### 5. Subscriber Engagement Rate
 ```sql
 Subscriber Engagement Rate = 
-VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
-VAR sumOfTotalVideos = SUM(view_uk_youtubers_2024[total_videos])
-VAR subscriberEngRate = DIVIDE(sumOfTotalSubscribers, sumOfTotalVideos, BLANK())
+VAR sumOfTotalSubscribers = SUM(view_german_youtubers_2024[total_subscribers])
+VAR sumOfTotalVideos = SUM(view_german_youtubers_2024[total_videos])
+VAR SubscriberEngRate = DIVIDE(sumOfTotalSubscribers, sumOfTotalVideos, BLANK())
 
-RETURN subscriberEngRate 
+RETURN SubscriberEngRate
 
 ```
 
 
 ### 6. Views per subscriber
 ```sql
-Views Per Subscriber = 
-VAR sumOfTotalViews = SUM(view_uk_youtubers_2024[total_views])
-VAR sumOfTotalSubscribers = SUM(view_uk_youtubers_2024[total_subscribers])
-VAR viewsPerSubscriber = DIVIDE(sumOfTotalViews, sumOfTotalSubscribers, BLANK())
+View per Subscriber = 
+VAR sumOfTotalViews = SUM(view_german_youtubers_2024[total_views])
+VAR sumOfTotalSubscribers = SUM(view_german_youtubers_2024[total_subscribers])
+VAR ViewsPerSubscriber = DIVIDE(sumOfTotalViews, sumOfTotalSubscribers, BLANK())
 
-RETURN viewsPerSubscriber 
+RETURN ViewsPerSubscriber
 
 ```
 
