@@ -1,7 +1,7 @@
 # End2End Project: Excel to Power BI 
 
 
-![excel-to-powerbi-animated-diagram](0. Images/kaggle_to_powerbi.gif)
+![excel-to-powerbi-animated-diagram][(0. Images/kaggle_to_powerbi.gif)](https://github.com/dgmuhlbauer98/Portfolio/blob/029337d2896663ec0c5786c680a1d504e4cfdd06/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/kaggle_to_powerbi.gif)
 
 
 
