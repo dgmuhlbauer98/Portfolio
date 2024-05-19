@@ -311,7 +311,7 @@ FROM
 
 ```
 
-![Row count check](assets/images/1_row_count_check.png)
+![Row count check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/row%20count%20check.png)
 
 
 
@@ -323,15 +323,15 @@ FROM
 */
 
 
-SELECT
-    COUNT(*) AS column_count
+SELECT 
+	COUNT(*) as no_of_columns
 FROM
     INFORMATION_SCHEMA.COLUMNS
-WHERE
-    TABLE_NAME = 'view_uk_youtubers_2024'
+WHERE 
+	TABLE_NAME = 'view_german_youtubers_2024';
 ```
 ### Output 
-![Column count check](assets/images/2_column_count_check.png)
+![Column count check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/column%20count%20check.png)
 
 
 
@@ -343,16 +343,16 @@ WHERE
 */
 
 -- 1.
-SELECT
-    COLUMN_NAME,
-    DATA_TYPE
-FROM
-    INFORMATION_SCHEMA.COLUMNS
-WHERE
-    TABLE_NAME = 'view_uk_youtubers_2024';
+SELECT 
+	COLUMN_NAME,
+	DATA_TYPE
+FROM 
+	INFORMATION_SCHEMA.COLUMNS
+WHERE 
+	TABLE_NAME = 'view_german_youtubers_2024';
 ```
 ### Output
-![Data type check](assets/images/3_data_type_check.png)
+![Data type check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/Data%20Type%20Check.png)
 
 
 ## Duplicate count check
@@ -365,11 +365,11 @@ WHERE
 */
 
 -- 1.
-SELECT
-    channel_name,
-    COUNT(*) AS duplicate_count
-FROM
-    view_uk_youtubers_2024
+SELECT 
+	channel_name,
+	COUNT(*) as duplicate_count
+FROM 
+	view_german_youtubers_2024
 
 -- 2.
 GROUP BY
@@ -380,7 +380,7 @@ HAVING
     COUNT(*) > 1;
 ```
 ### Output
-![Duplicate count check](assets/images/4_duplicate_records_check.png)
+![Duplicate count check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/duplicate%20count%20check.png)
 
 # Visualization 
 
