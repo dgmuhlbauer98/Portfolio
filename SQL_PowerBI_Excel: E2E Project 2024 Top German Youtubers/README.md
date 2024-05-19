@@ -1,7 +1,7 @@
 # End2End Project: Excel to Power BI 
 
 
-(0. Images/kaggle_to_powerbi.gif)
+![excel-to-powerbi-animated-diagram](0. Images/kaggle_to_powerbi.gif)
 
 
 
