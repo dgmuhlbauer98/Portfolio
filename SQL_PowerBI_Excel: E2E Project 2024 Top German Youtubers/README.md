@@ -117,7 +117,7 @@ Some of the data visuals that may be appropriate in answering our questions incl
 
 
 
-![Dashboard-Mockup](assets/images/dashboard_mockup.png)
+![Dashboard-Mockup](https://github.com/dgmuhlbauer98/Portfolio/blob/e0c7f37f54f0d70b01d354a070d6fc1806e77ed5/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/dashboard_mockup.png)
 
 
 ## Tools 
@@ -139,7 +139,7 @@ Some of the data visuals that may be appropriate in answering our questions incl
 - What's the general approach in creating this solution from start to finish?
 
 1. Get the data
-2. Explore the data in Excel
+2. Explore the data in Excel & Python
 3. Load the data into SQL Server
 4. Clean the data with SQL
 5. Test the data with SQL
@@ -150,18 +150,57 @@ Some of the data visuals that may be appropriate in answering our questions incl
 
 ## Data exploration notes
 
-This is the stage where you have a scan of what's in the data, errors, inconcsistencies, bugs, weird and corrupted characters etc  
+After downloading the dataset, I realized that total subscriber, total views, total videos was missing. I connected to the YouTube API to gather this data - see code below:
 
+```Python
+import pandas as pd
+from googleapiclient.discovery import build
 
-- What are your initial observations with this dataset? What's caught your attention so far? 
+df = pd.read_csv('youtube_data_germany.csv')
+df['channel_name'] = df['NAME'].str.split(' @').str[0]
+
+# Connect to the Youtube API Key
+API_KEY = 'AIzaSyBrNrFeT4GQBlRh5kSO7fDXt8X-jdUEKAI'
+youtube = build('youtube', 'v3', developerKey=API_KEY)
+
+# Write function to get channel statistics
+def get_channel_stats(channel_name):
+    request = youtube.search().list(
+        part='snippet',
+        q=channel_name,
+        type='channel'
+    )
+    response = request.execute()
+    
+    if response['items']:
+        channel_id = response['items'][0]['id']['channelId']
+        stats_request = youtube.channels().list(
+            part='statistics',
+            id=channel_id
+        )
+        stats_response = stats_request.execute()
+        stats = stats_response['items'][0]['statistics']
+        return {
+            'total_subscribers': stats.get('subscriberCount', 'N/A'),
+            'total_views': stats.get('viewCount', 'N/A'),
+            'total_videos': stats.get('videoCount', 'N/A')
+        }
+    else:
+        return {
+            'total_subscribers': 'N/A',
+            'total_views': 'N/A',
+            'total_videos': 'N/A'
+        }
+
+# Apply the function to each row in the dataset to receive total subscribers, total views, and total videos
+df[['total_subscribers', 'total_views', 'total_videos']] = df['channel_name'].apply(lambda x: pd.Series(get_channel_stats(x)))
+```
+
+- What are other initial observations with this dataset? 
 
 1. There are at least 4 columns that contain the data we need for this analysis, which signals we have everything we need from the file without needing to contact the client for any more data. 
 2. The first column contains the channel ID with what appears to be channel IDS, which are separated by a @ symbol - we need to extract the channel names from this.
-3. Some of the cells and header names are in a different language - we need to confirm if these columns are needed, and if so, we need to address them.
-4. We have more data than we need, so some of these columns would need to be removed
-
-
-
+3. We have more data than we need, so some of these columns would need to be removed
 
 
 ## Data cleaning 
