@@ -1,7 +1,7 @@
 # End2End Project: Excel to Power BI 
 
 
-SQL_PowerBI_Excel: E2E Project 2024 Top German Youtubers/0. Images/kaggle_to_powerbi.gif
+SQL_PowerBI_Excel: E2E Project 2024 Top German Youtubers/(0. Images/kaggle_to_powerbi.gif)
 
 
 
