@@ -712,33 +712,28 @@ We discovered that
 - What do you recommend based on the insights gathered? 
   
 1. Kinder Spielzeug Kanal is the best channel to collaborate with as they have the most subscribers and highest total views.
-2. Although GRM Daily, Man City and Yogcasts are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower compared to the other channels.
-3. Mister Max is the best YouTuber to collaborate with if we're interested in maximizing reach, but collaborating with DanTDM and Dan Rhodes may be better long-term options considering the fact that they both have large subscriber bases and are averaging significantly high number of views.
-4. The top 3 channels to form collaborations with are NoCopyrightSounds, DanTDM and Dan Rhodes based on this analysis, because they attract the most engagement on their channels consistently.
+2. Although the news channels produce a high amount of videos, I don't believe that these are good channels to collaborate with as they have very minimal subscriber engagement ratings.
+3. Kinder Spielzeug Kanal is the best channel to collaborate with if we want to maximize reach. Hwoever, Dhruv Rathee and German Spidey mighe be better long-term options due to their subscriber engagement scores and high click rates.
+4. The top 3 channels to form collaborations with are Kinder Spielzeug Kanal, Dhruv Rathee, and German Spidey due to their reach and high engagement rate/click rate.
 
 
-### Potential ROI 
 - What ROI do we expect if we take this course of action?
 
-1. Setting up a collaboration deal with Dan Rhodes would make the client a net profit of $1,065,000 per video
-2. An influencer marketing contract with Mister Max can see the client generate a net profit of $1,276,000
-3. If we go with a product placement campaign with DanTDM, this could  generate the client approximately $484,000 per video. If we advance with an influencer marketing campaign deal instead, this would make the client a one-off net profit of $404,000.
-4. NoCopyrightSounds could profit the client $642,000 per video too (which is worth considering) 
+1. If we go with a product placement campaign with Dhruv Rathee, this could  generate the client approximately $230,7500 per video.
+2. An influencer marketing contract with German Spidey can see the client generate a net profit of $369,750.
+3. If we go with a product placement campaign with Kinder Spielzeug Kanal, this could  generate the client approximately $731,000 per video. If we advance with an influencer marketing campaign deal instead, this would make the client a one-off net profit of $681,000.
 
 
-
-
-### Action plan
 - What course of action should we take and why?
 
-Based on our analysis, we beieve the best channel to advance a long-term partnership deal with to promote the client's products is the Dan Rhodes channel. 
+Based on the analysis, we believe the best channel to start a ,,long-term partnership with is the Kinder Spielzeug Kanal. Given the volume of subscribers as well as the average views per video, the reach of the channel will enable to marketing campaign to be very successful. 
 
-We'll have conversations with the marketing client to forecast what they also expect from this collaboration. Once we observe we're hitting the expected milestones, we'll advance with potential partnerships with DanTDM, Mister Max and NoCopyrightSounds channels in the future.   
+It would be beneficial to know more about the desired target customers as Dhruv Rathee might be a better fit due to its subscriber engagement rating. However, the susbscriber base must fit the desired target market to yield positive results. German Spidey is interesting due to its clicks per video but again it cannot match with Kinder Spielzeug Kanal view volume.
 
 - What steps do we take to implement the recommended decisions effectively?
 
 
-1. Reach out to the teams behind each of these channels, starting with Dan Rhodes
+1. Reach out to the teams behind each of these channels, starting with Kinder Spielzeug Kanal
 2. Negotiate contracts within the budgets allocated to each marketing campaign
 3. Kick off the campaigns and track each of their performances against the KPIs
 4. Review how the campaigns have gone, gather insights and optimize based on feedback from converted customers and each channel's audiences 
