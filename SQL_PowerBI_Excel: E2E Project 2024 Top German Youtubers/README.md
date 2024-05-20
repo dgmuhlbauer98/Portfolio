@@ -8,36 +8,20 @@
 
 # Table of contents 
 
-- [Objective](#objective)
-- [Data Source](#data-source)
-- [Stages](#stages)
-- [Design](#design)
-  - [Mockup](#mockup)
-  - [Tools](#tools)
-- [Development](#development)
-  - [Pseudocode](#pseudocode)
-  - [Data Exploration](#data-exploration)
-  - [Data Cleaning](#data-cleaning)
-  - [Transform the Data](#transform-the-data)
-  - [Create the SQL View](#create-the-sql-view)
-- [Testing](#testing)
-  - [Data Quality Tests](#data-quality-tests)
-- [Visualization](#visualization)
-  - [Results](#results)
-  - [DAX Measures](#dax-measures)
-- [Analysis](#analysis)
-  - [Findings](#findings)
-  - [Validation](#validation)
-  - [Discovery](#discovery)
+- [Problem Statement](#problem-statement)
+- [Project Work](#project-work)
+  - [Data Gathering](#data-gathering)
+  - [Data Exploration in Excel](#data-exploration-in-excel)
+  - [Load the Data in SQL Server](#Load-the-Data-in-SQL-Server)
+  - [Clean the Data With SQL](#Clean-the-Data-With-SQL)
+  - [Test the Data with SQL](#test-the-data-with-sql)
+  - [Visualize the Data in PowerBI](#visualize-the-data-in-powerbi)
+- [Findings](#findings)
 - [Recommendations](#recommendations)
-  - [Potential ROI](#potential-roi)
-  - [Potential Courses of Actions](#potential-courses-of-actions)
-- [Conclusion](#conclusion)
 
 
 
-
-# Objective 
+# Problem Statement 
 
 - What is the key pain point? 
 
@@ -54,104 +38,15 @@ To create a dashboard that provides insights into the top German YouTubers in 20
 
 This will help the marketing team make informed decisions about which YouTubers to collaborate with for their marketing campaigns.
 
-## User story 
-
-As the Head of Marketing, I want to use a dashboard that analyses YouTube channel data in Germany. 
-This dashboard should allow me to identify the top performing channels based on metrics like subscriber base and average views. 
-With this information, I can make more informed decisions about which Youtubers are right to collaborate with, and therefore maximize how effective each marketing campaign is.
+- What is the desired recommendation?
+Identify the accounts for the highest return on investment
 
 
-# Data source 
-
-- What data is needed to achieve our objective?
-
-We need data on the top German YouTubers in 2024 that includes their 
-- channel names
-- total subscribers
-- total views
-- total videos uploaded
-
-
-
-- Where is the data coming from? 
+# Project Work
+## 1. Data Gathering
 The data is sourced from Kaggle (an Excel extract), [see here to find it.](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download)
 
-
-# Stages
-
-- Design
-- Developement
-- Testing
-- Analysis 
- 
-
-
-# Design 
-
-## Dashboard components required 
-- What should the dashboard contain based on the requirements provided?
-
-To understand what it should contain, we need to figure out what questions we need the dashboard to answer:
-
-1. Who are the top 10 YouTubers with the most subscribers?
-2. Which 3 channels have uploaded the most videos?
-3. Which 3 channels have the most views?
-4. Which 3 channels have the highest average views per video?
-5. Which 3 channels have the highest views per subscriber ratio?
-6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
-
-For now, these are some of the questions we need to answer, this may change as we progress down our analysis. 
-
-
-## Dashboard mockup
-
-- What should it look like? 
-
-Some of the data visuals that may be appropriate in answering our questions include:
-
-1. Table
-2. Treemap
-3. Scorecards
-4. Horizontal bar chart 
-
-
-
-
-![Dashboard-Mockup](https://github.com/dgmuhlbauer98/Portfolio/blob/e0c7f37f54f0d70b01d354a070d6fc1806e77ed5/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/dashboard_mockup.png)
-
-
-## Tools 
-
-
-| Tool | Purpose |
-| --- | --- |
-| Excel | Exploring the data |
-| SQL Server | Cleaning, testing, and analyzing the data |
-| Power BI | Visualizing the data via interactive dashboards |
-| GitHub | Hosting the project documentation and version control |
-| Mokkup AI | Designing the wireframe/mockup of the dashboard | 
-
-
-# Development
-
-## Pseudocode
-
-- What's the general approach in creating this solution from start to finish?
-
-1. Get the data
-2. Explore the data in Excel & Python
-3. Load the data into SQL Server
-4. Clean the data with SQL
-5. Test the data with SQL
-6. Visualize the data in Power BI
-7. Generate the findings based on the insights
-8. Write the documentation + commentary
-9. Publish the data to GitHub Pages
-
-## Data exploration notes
-
-After downloading the dataset, I realized that total subscriber, total views, total videos was missing. I connected to the YouTube API to gather this data - see code below:
-
+Additionally, the YouTube API was used to identify missing key metrics
 ```Python
 import pandas as pd
 from googleapiclient.discovery import build
@@ -196,33 +91,31 @@ def get_channel_stats(channel_name):
 df[['total_subscribers', 'total_views', 'total_videos']] = df['channel_name'].apply(lambda x: pd.Series(get_channel_stats(x)))
 ```
 
-- What are other initial observations with this dataset? 
+## 2. Data Exploration in Excel
+Initial Observations:
 
 1. There are at least 4 columns that contain the data we need for this analysis, which signals we have everything we need from the file without needing to contact the client for any more data. 
 2. The first column contains the channel ID with what appears to be channel IDS, which are separated by a @ symbol - we need to extract the channel names from this.
 3. We have more data than we need, so some of these columns would need to be removed
 
+## 3. Load the Data in SQL Server
+write about the SQL Code
 
-## Data cleaning 
-- What do we expect the clean data to look like? (What should it contain? What contraints should we apply to it?)
+## 4. Clean the Data with SQL
 
 The aim is to refine our dataset to ensure it is structured and ready for analysis. 
-
 The cleaned data should meet the following criteria and constraints:
-
 - Only relevant columns should be retained.
 - All data types should be appropriate for the contents of each column.
 - No column should contain null values, indicating complete data for all records.
 
 Below is a table outlining the constraints on our cleaned dataset:
-
 | Property | Description |
 | --- | --- |
 | Number of Rows | 100 |
 | Number of Columns | 4 |
 
 And here is a tabular representation of the expected schema for the clean data:
-
 | Column Name | Data Type | Nullable |
 | --- | --- | --- |
 | channel_name | VARCHAR | NO |
@@ -230,24 +123,7 @@ And here is a tabular representation of the expected schema for the clean data:
 | total_views | INTEGER | NO |
 | total_videos | INTEGER | NO |
 
-
-
-- What steps are needed to clean and shape the data into the desired format?
-
-1. Remove unnecessary columns by only selecting the ones you need
-2. Extract Youtube channel names from the first column
-3. Rename columns using aliases
-
-
-
-
-
-
-
-### Transform the data 
-
-
-
+### 4.1 Data Transformation
 ```sql
 /*
 # 1. Select the required columns
@@ -264,10 +140,7 @@ SELECT
 FROM
     top_german_youtubers_2024
 ```
-
-
-### Create the SQL view 
-
+### 4.2 Create View
 ```sql
 /*
 # 1. Create a view to store the transformed data
@@ -291,14 +164,11 @@ FROM
 
 ```
 
-
-# Testing 
-
-- What data quality and validation checks are you going to create?
+## 5. Test the Data with SQL
 
 Here are the data quality tests conducted:
 
-## Row count check
+### 5.1 Row count check
 ```sql
 /*
 # Count the total number of records (or rows) are in the SQL view
@@ -310,13 +180,11 @@ FROM
 	view_german_youtubers_2024;
 
 ```
-
 ![Row count check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/row%20count%20check.png)
 
 
 
-## Column count check
-### SQL query 
+### 5.2 Column count check
 ```sql
 /*
 # Count the total number of columns (or fields) are in the SQL view
@@ -330,13 +198,11 @@ FROM
 WHERE 
 	TABLE_NAME = 'view_german_youtubers_2024';
 ```
-### Output 
 ![Column count check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/column%20count%20check.png)
 
 
 
-## Data type check
-### SQL query 
+### 5.3 Data type check
 ```sql
 /*
 # Check the data types of each column from the view by checking the INFORMATION SCHEMA view
@@ -351,12 +217,10 @@ FROM
 WHERE 
 	TABLE_NAME = 'view_german_youtubers_2024';
 ```
-### Output
 ![Data type check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/Data%20Type%20Check.png)
 
 
-## Duplicate count check
-### SQL query 
+### 5.4 Duplicate count check
 ```sql
 /*
 # 1. Check for duplicate rows in the view
@@ -379,8 +243,44 @@ GROUP BY
 HAVING
     	COUNT(*) > 1;
 ```
-### Output
 ![Duplicate count check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/duplicate%20count%20check.png)
+
+
+## Dashboard components required 
+- What should the dashboard contain based on the requirements provided?
+
+To understand what it should contain, we need to figure out what questions we need the dashboard to answer:
+
+1. Who are the top 10 YouTubers with the most subscribers?
+2. Which 3 channels have uploaded the most videos?
+3. Which 3 channels have the most views?
+4. Which 3 channels have the highest average views per video?
+5. Which 3 channels have the highest views per subscriber ratio?
+6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
+
+For now, these are some of the questions we need to answer, this may change as we progress down our analysis. 
+
+
+## Dashboard mockup
+
+- What should it look like? 
+
+Some of the data visuals that may be appropriate in answering our questions include:
+
+1. Table
+2. Treemap
+3. Scorecards
+4. Horizontal bar chart 
+
+
+
+
+![Dashboard-Mockup](https://github.com/dgmuhlbauer98/Portfolio/blob/e0c7f37f54f0d70b01d354a070d6fc1806e77ed5/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/dashboard_mockup.png)
+
+
+
+
+
 
 # Visualization 
 
