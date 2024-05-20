@@ -10,12 +10,12 @@
 
 - [Problem Statement](#problem-statement)
 - [Project Work](#project-work)
-  - [Data Gathering](#1.-data-gathering)
-  - [Data Exploration in Excel](#2.-data-exploration-in-excel)
-  - [Load the Data in SQL Server](#3.-Load-the-Data-in-SQL-Server)
-  - [Clean the Data With SQL](#4.-Clean-the-Data-With-SQL)
-  - [Test the Data with SQL](#5.-test-the-data-with-sql)
-  - [Visualize the Data in PowerBI](#6.-visualize-the-data-in-powerbi)
+  - Data Gathering
+  - Data Exploration in Excel
+  - Load the Data in SQL Server
+  - Clean the Data With SQL
+  - Test the Data with SQL
+  - Visualize the Data in PowerBI
 - [Findings](#findings)
 - [Recommendations](#recommendations)
 
@@ -246,10 +246,9 @@ HAVING
 ![Duplicate count check](https://github.com/dgmuhlbauer98/Portfolio/blob/49de2552b51e9fa0f41d670036183e0681601f25/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/duplicate%20count%20check.png)
 
 
-## Dashboard components required 
-- What should the dashboard contain based on the requirements provided?
-
-To understand what it should contain, we need to figure out what questions we need the dashboard to answer:
+# 6. Visualize the Data in PowerBI 
+## 6.1 Dashboard components required 
+Below are the questions that must be answered by the dashboard:
 
 1. Who are the top 10 YouTubers with the most subscribers?
 2. Which 3 channels have uploaded the most videos?
@@ -258,12 +257,7 @@ To understand what it should contain, we need to figure out what questions we ne
 5. Which 3 channels have the highest views per subscriber ratio?
 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
 
-For now, these are some of the questions we need to answer, this may change as we progress down our analysis. 
 
-
-## Dashboard mockup
-
-- What should it look like? 
 
 Some of the data visuals that may be appropriate in answering our questions include:
 
@@ -272,32 +266,19 @@ Some of the data visuals that may be appropriate in answering our questions incl
 3. Scorecards
 4. Horizontal bar chart 
 
-
-
+This is outlined in the mockup below.
 
 ![Dashboard-Mockup](https://github.com/dgmuhlbauer98/Portfolio/blob/e0c7f37f54f0d70b01d354a070d6fc1806e77ed5/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/dashboard_mockup.png)
 
 
-
-
-
-
-# Visualization 
-
-
-## Results
-
-- What does the dashboard look like?
+## 6.2 Finalized Dashboard
+This shows the Top German Youtubers in 2024 so far. 
 
 ![Picture of Power BI Dashboard](https://github.com/dgmuhlbauer98/Portfolio/blob/89a460b545d98dff39af106acb0cf687ad2e3859/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/dashboard.png)
 
-
-This shows the Top German Youtubers in 2024 so far. 
-
-
-## DAX Measures
-
-### 1. Total Subscribers (M)
+## 6.3 DAX Measures
+In order to answer the questions above, we had to create DAX measures:
+### 6.3.1 Total Subscribers (M)
 ```sql
 Total Subscriber (M) = 
 VAR million = 1000000
@@ -308,7 +289,7 @@ RETURN totalSubscribers
 
 ```
 
-### 2. Total Views (B)
+### 6.3.2 Total Views (B)
 ```sql
 Total Views (B) = 
 VAR billion = 1000000000
@@ -318,7 +299,7 @@ VAR totalViews = DIVIDE(sumOfTotalViews, billion)
 RETURN totalViews
 ```
 
-### 3. Total Videos
+### 6.3.3 Total Videos
 ```sql
 Total Videos = 
 VAR totalVideos = SUM(view_german_youtubers_2024[total_videos])
@@ -327,7 +308,7 @@ RETURN totalVideos
 
 ```
 
-### 4. Average Views Per Video (M)
+### 6.3.4 Average Views Per Video (M)
 ```sql
 Avg views per Video (M) = 
 VAR sumOfTotalViews = SUM(view_german_youtubers_2024[total_views])
@@ -340,7 +321,7 @@ RETURN finalAvgViewsPerVideo
 ```
 
 
-### 5. Subscriber Engagement Rate
+### 6.3.5. Subscriber Engagement Rate
 ```sql
 Subscriber Engagement Rate = 
 VAR sumOfTotalSubscribers = SUM(view_german_youtubers_2024[total_subscribers])
@@ -352,7 +333,7 @@ RETURN SubscriberEngRate
 ```
 
 
-### 6. Views per subscriber
+### 6.3.6 Views per subscriber
 ```sql
 View per Subscriber = 
 VAR sumOfTotalViews = SUM(view_german_youtubers_2024[total_views])
