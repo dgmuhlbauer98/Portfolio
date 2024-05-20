@@ -10,8 +10,8 @@
 
 - [Problem Statement](#problem-statement)
 - [Project Work](#project-work)
-  - [Data Gathering](#data-gathering)
-  - [Data Exploration in Excel](#data-exploration-in-excel)
+  - [Data Gathering]
+  - [Data Exploration in Excel]
   - [Load the Data in SQL Server](#Load-the-Data-in-SQL-Server)
   - [Clean the Data With SQL](#Clean-the-Data-With-SQL)
   - [Test the Data with SQL](#test-the-data-with-sql)
