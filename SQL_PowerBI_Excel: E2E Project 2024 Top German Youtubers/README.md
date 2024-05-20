@@ -733,7 +733,7 @@ We discovered that
 
 - What course of action should we take and why?
 
-Based on the analysis, we believe the best channel to start a ,,long-term partnership with is the Kinder Spielzeug Kanal. Given the volume of subscribers as well as the average views per video, the reach of the channel will enable to marketing campaign to be very successful. 
+Based on the analysis, I believe the best channel to start a long-term partnership with is the Kinder Spielzeug Kanal. Given the volume of subscribers as well as the average views per video, the reach of the channel will enable to marketing campaign to be very successful. 
 
 It would be beneficial to know more about the desired target customers as Dhruv Rathee might be a better fit due to its subscriber engagement rating. However, the susbscriber base must fit the desired target market to yield positive results. German Spidey is interesting due to its clicks per video but again it cannot match with Kinder Spielzeug Kanal view volume.
 
