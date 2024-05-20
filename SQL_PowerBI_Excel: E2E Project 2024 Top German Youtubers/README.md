@@ -47,7 +47,7 @@ Identify the accounts for the highest return on investment
 ## 1. Data Gathering
 The data is sourced from Kaggle (an Excel extract), [see here to find it.](https://www.kaggle.com/datasets/bhavyadhingra00020/top-100-social-media-influencers-2024-countrywise?resource=download)
 
-Additionally, the YouTube API was used to identify missing key metrics
+Additionally, the YouTube API was used to identify missing key metrics (total subscribers, total videos, total views):
 ```Python
 import pandas as pd
 from googleapiclient.discovery import build
