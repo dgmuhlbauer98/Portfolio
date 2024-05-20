@@ -348,9 +348,7 @@ RETURN ViewsPerSubscriber
 
 
 
-# Analysis 
-
-## Findings
+# Findings
 
 - What did we find?
 
@@ -367,71 +365,69 @@ Here are the key questions we need to answer for our marketing client:
 
 ### 1. Who are the top 10 YouTubers with the most subscribers?
 
-| Rank | Channel Name         | Subscribers (M) |
-|------|----------------------|-----------------|
-| 1    | NoCopyrightSounds    | 33.60           |
-| 2    | DanTDM               | 28.60           |
-| 3    | Dan Rhodes           | 26.50           |
-| 4    | Miss Katy            | 24.50           |
-| 5    | Mister Max           | 24.40           |
-| 6    | KSI                  | 24.10           |
-| 7    | Jelly                | 23.50           |
-| 8    | Dua Lipa             | 23.30           |
-| 9    | Sidemen              | 21.00           |
-| 10   | Ali-A                | 18.90           |
+| Rank | Channel Name         	| Subscribers (M) |
+|------|------------------------|-----------------|
+| 1    | Kinder Spielzeug Kanal	| 25.80	          |
+| 2    | Dhruv Rathee           | 20.10	          |
+| 3    | HaerteTest	        | 19.60           |
+| 4    | Ice Cream Rolls        | 12.30        	  |
+| 5    | Pamela Reif	        | 9.90	          |
+| 6    | German Spidey          | 8.62	          |
+| 7    | freekickerz            | 8.58            |
+| 8    | The Voice Kids         | 8.40            |
+| 9    | Rammstein Official     | 8.09            |
+| 10   | COLORS                 | 7.49            |
 
 
 ### 2. Which 3 channels have uploaded the most videos?
 
 | Rank | Channel Name    | Videos Uploaded |
 |------|-----------------|-----------------|
-| 1    | GRM Daily       | 14,696          |
-| 2    | Manchester City | 8,248           |
-| 3    | Yogscast        | 6,435           |
+| 1    | DW Español      | 41,273          |
+| 2    | DW News	 | 34,320          |
+| 3    | PietSmiet       | 27,716          |
 
 
 
 ### 3. Which 3 channels have the most views?
 
 
-| Rank | Channel Name | Total Views (B) |
-|------|--------------|-----------------|
-| 1    | DanTDM       | 19.78           |
-| 2    | Dan Rhodes   | 18.56           |
-| 3    | Mister Max   | 15.97           |
+| Rank | Channel Name 		| Total Views (B) |
+|------|------------------------|-----------------|
+| 1    | Kinder Spielzeug Kanal	| 13.21           |
+| 2    | German Spidey          | 9.30	          |
+| 3    | ArkivaShqip	        | 7.43            |
 
 
 ### 4. Which 3 channels have the highest average views per video?
 
-| Channel Name | Averge Views per Video (M) |
-|--------------|-----------------|
-| Mark Ronson  | 32.27           |
-| Jessie J     | 5.97            |
-| Dua Lipa     | 5.76            |
+| Rank | Channel Name 		| Averge Views per Video (M) |
+|------|------------------------|----------------------------|
+| 1    | Mois	       		| 130.19          	     |
+| 2    | Rammstein Official	| 37.40                      |
+| 3    | LEO ROJAS - official   | 28.55                      |
 
 
 ### 5. Which 3 channels have the highest views per subscriber ratio?
 
 | Rank | Channel Name       | Views per Subscriber        |
 |------|-----------------   |---------------------------- |
-| 1    | GRM Daily          | 1185.79                     |
-| 2    | Nickelodeon        | 1061.04                     |
-| 3    | Disney Junior UK   | 1031.97                     |
+| 1    | ArkivaShqip        | 1,651.24                    |
+| 2    | PietSmiet          | 1,453.91                    |
+| 3    | marsgizmo          | 1,307.03                    |
 
 
 
 ### 6. Which 3 channels have the highest subscriber engagement rate per video uploaded?
 
-| Rank | Channel Name    | Subscriber Engagement Rate  |
-|------|-----------------|---------------------------- |
-| 1    | Mark Ronson     | 343,000                     |
-| 2    | Jessie J        | 110,416.67                  |
-| 3    | Dua Lipa        | 104,954.95                  |
+| Rank | Channel Name    	| Subscriber Engagement Rate  |
+|------|------------------------|---------------------------- |
+| 1    | Mois            	| 424,000                     |
+| 2    | LEO ROJAS - official   | 1101,944.44                 |
+| 3    | TheFatRat	        | 54,661.02                   |
 
 
-
-
-### Notes
+## Findings Analysis
 
 For this analysis, we'll prioritize analysing the metrics that are important in generating the expected ROI for our marketing client, which are the YouTube channels wuth the most 
 
@@ -439,47 +435,38 @@ For this analysis, we'll prioritize analysing the metrics that are important in 
 - total views
 - videos uploaded
 
-
-
-## Validation 
-
-### 1. Youtubers with the most subscribers 
-
-#### Calculation breakdown
+## 1. Youtubers with the most subscribers 
 
 Campaign idea = product placement 
 
-1. NoCopyrightSounds 
-- Average views per video = 6.92 million
-- Product cost = $5
-- Potential units sold per video = 6.92 million x 2% conversion rate = 138,400 units sold
-- Potential revenue per video = 138,400 x $5 = $692,000
-- Campaign cost (one-time fee) = $50,000
-- **Net profit = $692,000 - $50,000 = $642,000**
+a. **Kinder Spielzeug Kanal** 
+- Average views per video = 11.08 million
+- Product cost = $3
+- Potential units sold per video = 11.08 million x 2.5% conversion rate = 277,000 units sold
+- Potential revenue per video = 277,000 x $3 = $831,000
+- Campaign cost (one-time fee) = $100,000
+- **Net profit = $831,000 - $100,000 = $731,000**
 
-b. DanTDM
+b. **Dhruv Rathee**
 
-- Average views per video = 5.34 million
-- Product cost = $5
-- Potential units sold per video = 5.34 million x 2% conversion rate = 106,800 units sold
-- Potential revenue per video = 106,800 x $5 = $534,000
-- Campaign cost (one-time fee) = $50,000
-- **Net profit = $534,000 - $50,000 = $484,000**
+- Average views per video = 4.41 million
+- Product cost = $3
+- Potential units sold per video = 4.41 million x 2.5% conversion rate = 110,250 units sold
+- Potential revenue per video = 110,250 x $3 = $330,750
+- Campaign cost (one-time fee) = $100,000
+- **Net profit = $330,750 - $100,000 = $230,750**
 
-c. Dan Rhodes
+c. **HaerteTest**
 
-- Average views per video = 11.15 million
-- Product cost = $5
-- Potential units sold per video = 11.15 million x 2% conversion rate = 223,000 units sold
-- Potential revenue per video = 223,000 x $5 = $1,115,000
-- Campaign cost (one-time fee) = $50,000
-- **Net profit = $1,115,000 - $50,000 = $1,065,000**
-
-
-Best option from category: Dan Rhodes
+- Average views per video = 2.15 million
+- Product cost = $3
+- Potential units sold per video = 2.15 million x 2.5% conversion rate = 53,750 units sold
+- Potential revenue per video = 53,750 x $3 = $161,250
+- Campaign cost (one-time fee) = $100,000
+- **Net profit = $161,250 - $100,000 = $61,250**
 
 
-#### SQL query 
+Best option from category: Kinder Spielzeug Kanal 
 
 ```sql
 /* 
@@ -493,85 +480,78 @@ Best option from category: Dan Rhodes
 */
 
 
--- 1. 
-DECLARE @conversionRate FLOAT = 0.02;		-- The conversion rate @ 2%
-DECLARE @productCost FLOAT = 5.0;			-- The product cost @ $5
-DECLARE @campaignCost FLOAT = 50000.0;		-- The campaign cost @ $50,000	
+-- 1.
+DECLARE @conversionRate FLOAT = 0.025;			-- conversion rate @ 2.5%
+DECLARE @productCost MONEY = 3.0;			-- Product cost @ $3
+DECLARE @campaignCost MONEY = 100000.0;			-- Campaign cost @ $100,000
 
-
--- 2.  
+-- 2.
 WITH ChannelData AS (
-    SELECT 
-        channel_name,
-        total_views,
-        total_videos,
-        ROUND((CAST(total_views AS FLOAT) / total_videos), -4) AS rounded_avg_views_per_video
-    FROM 
-        youtube_db.dbo.view_uk_youtubers_2024
+	SELECT
+		channel_name,
+		total_views,
+		total_videos,
+		ROUND((CAST(total_views as FLOAT) / total_videos), -4) AS rounded_avg_views_per_video
+	FROM 
+		youtube_db.dbo.view_german_youtubers_2024
 )
 
--- 3. 
+-- 3.
+
 SELECT 
-    channel_name,
-    rounded_avg_views_per_video,
-    (rounded_avg_views_per_video * @conversionRate) AS potential_units_sold_per_video,
-    (rounded_avg_views_per_video * @conversionRate * @productCost) AS potential_revenue_per_video,
-    ((rounded_avg_views_per_video * @conversionRate * @productCost) - @campaignCost) AS net_profit
+	channel_name,
+	rounded_avg_views_per_video,
+	(rounded_avg_views_per_video * @conversionRate) AS potential_units_sold_per_video,
+	(rounded_avg_views_per_video * @conversionRate * @productCost) AS potential_revenue_per_video,
+	(rounded_avg_views_per_video * @conversionRate * @productCost) - @campaignCost AS net_profit
 FROM 
-    ChannelData
+	ChannelData
 
-
--- 4. 
+-- 4.
 WHERE 
-    channel_name in ('NoCopyrightSounds', 'DanTDM', 'Dan Rhodes')    
+	channel_name IN ('Kinder Spielzeug Kanal', 'HaerteTest', 'Dhruv Rathee')
 
-
--- 5.  
+-- 5.
 ORDER BY
-	net_profit DESC
+	net_profit DESC;
 
 ```
 
-#### Output
+![Most subsc](https://github.com/dgmuhlbauer98/Portfolio/blob/8a000fc12467325db672cedc9e331858aa2af602/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/most%20subs.png)
 
-![Most subsc](assets/images/youtubers_with_the_most_subs.png)
-
-### 2. Youtubers with the most videos uploaded
-
-### Calculation breakdown 
+## 2. Youtubers with the most videos uploaded
 
 Campaign idea = sponsored video series  
 
-1. GRM Daily
-- Average views per video = 510,000
-- Product cost = $5
-- Potential units sold per video = 510,000 x 2% conversion rate = 10,200 units sold
-- Potential revenue per video = 10,200 x $5= $51,000
-- Campaign cost (11-videos @ $5,000 each) = $55,000
-- **Net profit = $51,000 - $55,000 = -$4,000 (potential loss)**
+a. **DW Español**
+- Average views per video = 60,000
+- Product cost = $3
+- Potential units sold per video = 60,000 x 2.5% conversion rate = 1,500 units sold
+- Potential revenue per video = 1,500 x $3 = $4,500
+- Campaign cost (5-videos @ $1,000 each) = $5,000
+- **Net profit = $4,500 - $5,000 = -$500 (potential loss)**
 
-b. **Manchester City**
+b. **DW News**
 
-- Average views per video = 240,000
-- Product cost = $5
-- Potential units sold per video = 240,000 x 2% conversion rate = 4,800 units sold
-- Potential revenue per video = 4,800 x $5= $24,000
-- Campaign cost (11-videos @ $5,000 each) = $55,000
-- **Net profit = $24,000 - $55,000 = -$31,000 (potential loss)**
+- Average views per video = 70,000
+- Product cost = $3
+- Potential units sold per video = 70,000 x 2.5% conversion rate = 1,750 units sold
+- Potential revenue per video = 1,750 x $3 = $5,250
+- Campaign cost (5-videos @ $1,000 each) = $5,000
+- **Net profit = $5,250 - $5,000 = $250 (profit)**
 
-b. **Yogscast**
+b. **PietSmiet**
 
-- Average views per video = 710,000
-- Product cost = $5
-- Potential units sold per video = 710,000 x 2% conversion rate = 14,200 units sold
-- Potential revenue per video = 14,200 x $5= $71,000
-- Campaign cost (11-videos @ $5,000 each) = $55,000
-- **Net profit = $71,000 - $55,000 = $16,000 (profit)**
+- Average views per video = 130,000
+- Product cost = $3
+- Potential units sold per video = 130,000 x 2.5% conversion rate = 3,250 units sold
+- Potential revenue per video = 3,250 x $3 = $9,750
+- Campaign cost (5-videos @ $1,000 each) = $5,000
+- **Net profit = $9,750 - $5,000 = $4,750 (profit)**
 
 
-Best option from category: Yogscast
+Best option from category: PietSmiet
 
-#### SQL query 
 ```sql
 /* 
 # 1. Define variables
@@ -580,13 +560,11 @@ Best option from category: Yogscast
 # 4. Filter results by YouTube channels
 # 5. Sort results by net profits (from highest to lowest)
 */
-
-
 -- 1.
-DECLARE @conversionRate FLOAT = 0.02;           -- The conversion rate @ 2%
-DECLARE @productCost FLOAT = 5.0;               -- The product cost @ $5
-DECLARE @campaignCostPerVideo FLOAT = 5000.0;   -- The campaign cost per video @ $5,000
-DECLARE @numberOfVideos INT = 11;               -- The number of videos (11)
+DECLARE @conversionRate FLOAT = 0.025;          -- The conversion rate @ 2.5%
+DECLARE @productCost FLOAT = 3.0;               -- The product cost @ $3
+DECLARE @campaignCostPerVideo FLOAT = 1000.0;   -- The campaign cost per video @ $1,000
+DECLARE @numberOfVideos INT = 5;                -- The number of videos (5)
 
 
 -- 2.
@@ -597,7 +575,7 @@ WITH ChannelData AS (
         total_videos,
         ROUND((CAST(total_views AS FLOAT) / total_videos), -4) AS rounded_avg_views_per_video
     FROM
-        youtube_db.dbo.view_uk_youtubers_2024
+        youtube_db.dbo.view_german_youtubers_2024
 )
 
 
@@ -614,7 +592,7 @@ FROM
 
 -- 4.
 WHERE
-    channel_name IN ('GRM Daily', 'Man City', 'YOGSCAST Lewis & Simon ')
+    channel_name IN ('DW Español', 'DW News', 'PietSmiet')
 
 
 -- 5.
@@ -622,45 +600,40 @@ ORDER BY
     net_profit DESC;
 ```
 
-#### Output
-
-![Most videos](assets/images/youtubers_with_the_most_videos.png)
-
+![most videos](https://github.com/dgmuhlbauer98/Portfolio/blob/60deb835c83700b250a0167c6f1f4b9445266cfa/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/most%20videos.png)
 
 ### 3.  Youtubers with the most views 
 
-#### Calculation breakdown
-
 Campaign idea = Influencer marketing 
 
-a. DanTDM
+a. **Kinder Spielzeug Kanal**
 
-- Average views per video = 5.34 million
-- Product cost = $5
-- Potential units sold per video = 5.34 million x 2% conversion rate = 106,800 units sold
-- Potential revenue per video = 106,800 x $5 = $534,000
-- Campaign cost (3-month contract) = $130,000
-- **Net profit = $534,000 - $130,000 = $404,000**
+- Average views per video = 11.08 million
+- Product cost = $3
+- Potential units sold per video = 11.08 million x 2.5% conversion rate = 277,000 units sold
+- Potential revenue per video = 277,000 x $3 = $831,000
+- Campaign cost = $150,000
+- **Net profit = $831,000 - $150,000 = $681,000**
 
-b. Dan Rhodes
+b. **German Spidey**
 
-- Average views per video = 11.15 million
-- Product cost = $5
-- Potential units sold per video = 11.15 million x 2% conversion rate = 223,000 units sold
-- Potential revenue per video = 223,000 x $5 = $1,115,000
-- Campaign cost (3-month contract) = $130,000
-- **Net profit = $1,115,000 - $130,000 = $985,000**
+- Average views per video = 6.93 million
+- Product cost = $3
+- Potential units sold per video = 6.93 million x 2.5% conversion rate = 173,250 units sold
+- Potential revenue per video = 173,250 x $3 = $519,750
+- Campaign cost = $150,000
+- **Net profit = $519,750 - $150,000 = $369,750**
 
-c. Mister Max
+c. **ArkivaShqip**
 
-- Average views per video = 14.06 million
-- Product cost = $5
-- Potential units sold per video = 14.06 million x 2% conversion rate = 281,200 units sold
-- Potential revenue per video = 281,200 x $5 = $1,406,000
-- Campaign cost (3-month contract) = $130,000
-- **Net profit = $1,406,000 - $130,000 = $1,276,000**
+- Average views per video = 840,000
+- Product cost = $3
+- Potential units sold per video = 840,000 x 2.5% conversion rate = 21,000 units sold
+- Potential revenue per video = 21,000 x $3 = $63,000
+- Campaign cost = $150,000
+- **Net profit = $63,000 - $150,000 = -$87,000 (potential loss)**
 
-Best option from category: Mister Max
+Best option from category: Kinder Spielzeug Kanal
 
 
 
@@ -677,9 +650,9 @@ Best option from category: Mister Max
 
 
 -- 1.
-DECLARE @conversionRate FLOAT = 0.02;        -- The conversion rate @ 2%
-DECLARE @productCost MONEY = 5.0;            -- The product cost @ $5
-DECLARE @campaignCost MONEY = 130000.0;      -- The campaign cost @ $130,000
+DECLARE @conversionRate FLOAT = 0.025;       -- The conversion rate @ 2.5%
+DECLARE @productCost MONEY = 3.0;            -- The product cost @ $3
+DECLARE @campaignCost MONEY = 150000.0;      -- The campaign cost @ $150,000
 
 
 
@@ -691,7 +664,7 @@ WITH ChannelData AS (
         total_videos,
         ROUND(CAST(total_views AS FLOAT) / total_videos, -4) AS avg_views_per_video
     FROM
-        youtube_db.dbo.view_uk_youtubers_2024
+        youtube_db.dbo.view_german_youtubers_2024
 )
 
 
@@ -708,7 +681,7 @@ FROM
 
 -- 4.
 WHERE
-    channel_name IN ('Mister Max', 'DanTDM', 'Dan Rhodes')
+    channel_name IN ('Kinder Spielzeug Kanal', 'German Spidey', 'ArkivaShqip')
 
 
 -- 5.
@@ -719,30 +692,26 @@ ORDER BY
 
 #### Output
 
-![Most views](assets/images/youtubers_with_the_most_views.png)
+![Most views](https://github.com/dgmuhlbauer98/Portfolio/blob/f6f62d0ca0ffa01e90010a590514a0b82510b65b/SQL_PowerBI_Excel%3A%20E2E%20Project%202024%20Top%20German%20Youtubers/0.%20Images/most%20views.png)
 
 
 
-## Discovery
+# Recommendations
 
 - What did we learn?
 
 We discovered that 
 
 
-1. NoCopyrightSOunds, Dan Rhodes and DanTDM are the channnels with the most subscribers in the UK
-2. GRM Daily, Man City and Yogscast are the channels with the most videos uploaded
-3. DanTDM, Dan RHodes and Mister Max are the channels with the most views
-4. Entertainment channels are useful for broader reach, as the channels posting consistently on their platforms and generating the most engagement are focus on entertainment and music 
+1. Kinder Spielzeug Kanal, Dhruv Rathee and HaerteTest are the channnels with the most subscribers in Germany
+2. DW Español, DW News and PietSmiet are the channels with the most videos uploaded
+3. Kinder Spielzeug Kanal, German Spidey and ArkivaShqip are the channels with the most views
+4. Channels that are focused on entertainment and news are most destined to generate subscriber and views. 
 
-
-
-
-## Recommendations 
 
 - What do you recommend based on the insights gathered? 
   
-1. Dan Rhodes is the best YouTube channel to collaborate with if we want to maximize visbility because this channel has the most YouTube subscribers in the UK
+1. Kinder Spielzeug Kanal is the best channel to collaborate with as they have the most subscribers and highest total views.
 2. Although GRM Daily, Man City and Yogcasts are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower compared to the other channels.
 3. Mister Max is the best YouTuber to collaborate with if we're interested in maximizing reach, but collaborating with DanTDM and Dan Rhodes may be better long-term options considering the fact that they both have large subscriber bases and are averaging significantly high number of views.
 4. The top 3 channels to form collaborations with are NoCopyrightSounds, DanTDM and Dan Rhodes based on this analysis, because they attract the most engagement on their channels consistently.
