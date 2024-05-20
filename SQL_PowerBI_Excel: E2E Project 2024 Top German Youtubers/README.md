@@ -10,12 +10,12 @@
 
 - [Problem Statement](#problem-statement)
 - [Project Work](#project-work)
-  - [Data Gathering]
-  - [Data Exploration in Excel]
-  - [Load the Data in SQL Server](#Load-the-Data-in-SQL-Server)
-  - [Clean the Data With SQL](#Clean-the-Data-With-SQL)
-  - [Test the Data with SQL](#test-the-data-with-sql)
-  - [Visualize the Data in PowerBI](#visualize-the-data-in-powerbi)
+  - [Data Gathering](#1.-data-gathering)
+  - [Data Exploration in Excel](#2.-data-exploration-in-excel)
+  - [Load the Data in SQL Server](#3.-Load-the-Data-in-SQL-Server)
+  - [Clean the Data With SQL](#4.-Clean-the-Data-With-SQL)
+  - [Test the Data with SQL](#5.-test-the-data-with-sql)
+  - [Visualize the Data in PowerBI](#6.-visualize-the-data-in-powerbi)
 - [Findings](#findings)
 - [Recommendations](#recommendations)
 
