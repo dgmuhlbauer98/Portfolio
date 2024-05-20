@@ -100,7 +100,14 @@ Initial Observations:
 3. We have more data than we need, so some of these columns would need to be removed
 
 ## 3. Load the Data in SQL Server
-write about the SQL Code
+```SQL
+CREATE DATABASE youtube_db;
+
+USE youtube_db;
+
+-- Next, I imported the Excel as a flat file to the created database
+
+```
 
 ## 4. Clean the Data with SQL
 
