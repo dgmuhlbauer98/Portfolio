@@ -39,6 +39,7 @@ To create a dashboard that provides insights into the top German YouTubers in 20
 This will help the marketing team make informed decisions about which YouTubers to collaborate with for their marketing campaigns.
 
 - What is the desired recommendation?
+
 Identify the accounts for the highest return on investment
 
 
